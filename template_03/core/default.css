@@ -1,0 +1,90 @@
+*{
+    background-color:burlywood;
+    margin: 0;
+}
+body{
+    width: 100%;
+}
+iframe{
+    border: 1px solid black;
+    width: 100%;
+}
+sub{
+    display: inline;
+    float: right;
+    margin-right: 32px;
+    margin-top: 2px;
+}
+h1{
+    text-align: center;
+    border: 1px solid black;
+    margin: 10px 20px 40px;
+}
+.navbar{
+    margin: 30px;
+    border: 1px solid black;
+    
+}
+.navbar ul{
+    display: inline;
+}
+.navbar ul li{
+    display: inline;
+    margin-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: darkred;
+}
+#fig{
+    width: 50%;
+    vertical-align: top;
+}
+
+p{
+    display: inline-block;
+}
+.container{
+    margin: 0 auto;
+    width: 98%;
+    margin-left: 30px;
+}
+#photo_elephant{
+    display: inline-block;
+    width: 80%;
+}
+#table_1{
+    margin-left: 30px;
+}
+#table_1 th{
+    border: 1px solid black;
+}
+#table_1 td{
+    border: 1px solid black;
+}
+#nvs{
+    display: inline;
+    text-align: center;
+    margin-left: 30px;
+}
+#formulaire_table{
+    margin-top: 20px;
+    margin-left: 30px;
+    border: 1px solid black;
+}
+#formulaire_table th{
+    border: 1px solid black;
+}
+#formulaire_table td{
+    border: 1px solid black;
+}
+input{
+    margin-left: 30px;
+    text-align: center;
+}
+#qualidad{
+    margin-left: 30px;
+}
+#nvs{
+    display: none;
+}

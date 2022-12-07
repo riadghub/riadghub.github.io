@@ -1,0 +1,399 @@
+@font-face {
+    font-family: "beauty mermaid";
+    src: url("../../Assets/sources/polices/beauty_mermaid.ttf");
+}
+
+@font-face {
+    font-family: "beauty mermaid";
+    src: url("../../Assets/sources/polices/beauty_mermaid_italic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "beauty mermaid";
+    src: url("../../Assets/sources/polices/beauty_mermaid_bold.ttf");
+    font-style: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f6f6;
+    margin: 0;
+    height: 100vh;
+    
+}
+/** Le Sign Up **/
+#signUpUL{
+    display: inline-block;
+    color: #2c9599;
+}
+ul#signUpUL{
+    list-style-type: none;
+}
+ul#signUpUL li{
+    margin-bottom: 30px;
+}
+#conditions{
+    color: black;
+}
+#conditions a{
+    color: blue;
+}
+#usernameSignUp{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+#e-mail{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+#passwordSignUp{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+#btnSignUp{
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    padding: 20px 41%;
+    margin-bottom: 80px;
+    background: linear-gradient(305deg, #27c3dd, #3327dd, #4e47b4);
+    background-size: 600% 600%;
+    -webkit-animation: btnGradient 8s ease infinite;
+    -moz-animation: btnGradient 8s ease infinite;
+    animation: btnGradient 8s ease infinite;
+}
+@-webkit-keyframes btnGradient {
+    0%{background-position:0% 25%}
+    50%{background-position:100% 76%}
+    100%{background-position:0% 25%}
+}
+@-moz-keyframes btnGradient {
+    0%{background-position:0% 25%}
+    50%{background-position:100% 76%}
+    100%{background-position:0% 25%}
+}
+@keyframes btnGradient {
+    0%{background-position:0% 25%}
+    50%{background-position:100% 76%}
+    100%{background-position:0% 25%}
+}
+#btnSignUp:hover {
+    background: linear-gradient(146deg, #2f67b6, #6b27dd, #44cabf);
+    background-size: 600% 600%;
+
+    -webkit-animation: btnGradientHover 4s ease infinite;
+    -moz-animation: btnGradientHover 4s ease infinite;
+    animation: btnGradientHover 4s ease infinite;
+}
+
+@-webkit-keyframes btnGradientHover {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@-moz-keyframes btnGradientHover {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@keyframes btnGradientHover {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+#btnSignUp:active {
+    background: linear-gradient(271deg, #dd3127, #dd8127, #cab644);
+    background-size: 600% 600%;
+
+    -webkit-animation: btnGradientActive 1s ease infinite;
+    -moz-animation: btnGradientActive 1s ease infinite;
+    animation: btnGradientActive 1s ease infinite;
+}
+
+@-webkit-keyframes btnGradientActive {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes btnGradientActive {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes btnGradientActive {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+.container h2{
+    text-align: center;
+}
+/** Le login **/
+
+.login{
+    color: silver;
+}
+.login li{
+    position: relative;
+    left: 50%;
+}
+ul.login {
+    font-size: bold;
+
+}
+li.login_f{
+    display: inline;
+    margin-right: 10px;
+    position: relative;
+    left: 53.5%;
+
+}
+li.login_f a:hover{
+    color: black;
+}
+li.login_f a:active{
+    color: #a61919;
+}
+/** --------------- **/
+#logo {
+    background: #F7A76C;
+    font-size: 45px;
+    font-family: 'beauty mermaid';
+    text-align: center;
+    color: #a61919;
+    text-shadow: -10px 1px 4px rgba(0,0,0,0.3);
+    border-bottom: 1px solid black;
+    letter-spacing: 3px;
+}
+
+#presentation {
+    vertical-align: top;
+}
+#presentation a{
+    color: #f2a07b;
+}
+
+#lipsum {
+    text-align: justify;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 24px -11px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+p {
+    display: inline-block;
+}
+section {
+    margin: 30px;
+}
+.container {
+    margin: 0 auto;
+    width: 100vh;
+    position: fixed absolute;
+}
+header{
+    background: #515070;
+    border-bottom: 1px solid black;
+    
+}
+
+footer {
+    font-size: smaller;
+    background: #515070;
+    border-top: 1px solid black;
+    padding: 30px 5px 30px 5px;
+    color: lightgray;
+}
+footer ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+header ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+}
+header ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: silver;
+}
+.photo_recette{
+    display: inline-block;
+    width: 30%;
+}
+#colonne_droite {
+    vertical-align: top;
+    width: 67%;
+    margin-left: 3%;
+    display: inline-block;
+}
+#ingredients{
+    background-color: #393b44;
+    color: white;
+    padding: 15px; 
+}
+#etapes{
+    padding: 15px;
+}
+#video_preparation{
+    padding: 15px;
+    color: white;
+    background-color: #393b44;
+}
+iframe{
+    margin-left: 50px;
+    width: 410px;
+}
+#recompenses table, td{
+    border: 1px solid black;
+}
+#recompenses th{
+    border: 1px solid black;
+    background-color: #515070;
+    color: lightgray;
+}
+#grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 150px 150px 150px;
+    grid-gap: 15px;
+    height: 500px;
+}
+
+.element {
+  padding: 10px;
+  margin: 30px;
+}
+.element p{
+    font-weight: bold;
+    font-size: 15px;
+}
+ul.navbar li a:hover{
+    color: black;
+}
+ul.navbar li a:active{
+    color: #a61919;
+} 
+.btn-connexion{
+    background: none;
+    font-weight: bold;
+    color: lightgray;
+    border-radius: 10px;
+}
+#username{
+    border-radius: 10px;
+}
+#password{
+    border-radius: 10px;
+}
+#ytb_recette{
+    width: 360px;
+    height: 280px;
+}
+.navbar{
+    height: 12vh;
+    display: flex;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/** Responsive : **/
+@media all and (max-width : 1350px) {
+    #photo_tartes{
+        width: 200px;
+        height: 160px;
+    }
+    .element p{
+        font-size: 14px;
+    }
+    li.login_f{
+        display: inline;
+        position: relative;
+        left: 0%;
+        margin-right: 10px;
+    }
+    .login li{
+        display: inline-block;
+        position: relative;
+        left: 0%;
+    }
+}
+@media all and (max-width : 1021px) {
+    .container{
+        width: 650px;
+    }
+    #logo{
+        font-size: 35px;
+    }
+    #ytb_recette{
+        width: 320px;
+        height: 240px;
+    }
+    #grille{
+        display: inline-block;
+    }
+    #usernameSignUp{
+        width: 80%;
+    }
+    #e-mail{
+        width: 80%;
+    }
+    #passwordSignUp{
+        width: 80%;
+    }
+    #btnSignUp{
+        width: 80%;
+        text-align: center;
+        padding: 10px 10%;
+    }
+}
+@media all and (max-width : 669px) {
+    .container{
+        width: 430px;
+    }
+    #logo{
+        font-size: 30px;
+    }
+    #ytb_recette{
+        width: 170px;
+        height: 170px;
+    }
+    #mascotte{
+        display: none;
+    }
+    ul.navbar{
+        font-size: 15px;
+    }
+    .login_f{
+        font-size: 13px;
+    }
+    .element p{
+        font-size: 13px;
+    }
+}

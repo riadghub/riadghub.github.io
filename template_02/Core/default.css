@@ -1,0 +1,18 @@
+*{
+    margin-left: 10px;
+}
+img{
+    border: 5px dotted red;
+}
+td{
+    border: 3px solid black;
+}
+.navbar{
+    border-bottom: 1px solid black;
+}
+.navbar ul{
+    display: inline;
+}
+.navbar ul li{
+    display: inline;
+}
