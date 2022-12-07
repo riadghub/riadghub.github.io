@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(Assets/space_wallpaper.jpg);
+}
+.navigation{
+    position: sticky;
+    top:0;
+    margin: 30px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+nav ul li{
+    display: inline-block;
+}
