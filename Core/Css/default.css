@@ -2,13 +2,30 @@
     margin: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: #f3f3f3;
+}
 body{
-    background-image:url(Assets/space_wallpaper.jpg);
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url(../../Assets/images/pixel_background.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f3f3f3;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
 }
 .navigation{
     position: sticky;
     top:0;
-    margin: 30px;
+    width: 100%;
+    height: 8%;
+    background-color:rgba(0,0,0,0.2);
+}
+h1{
+    margin-top: 15px;
 }
 nav{
     display: flex;
@@ -17,6 +34,26 @@ nav{
     padding-left: 10%;
     padding-right: 10%;
 }
+nav ul{
+    margin-top: 15px;
+}
 nav ul li{
     display: inline-block;
+    margin-right: 20px;
+}
+.icons ul li{
+    align-items: center;
+}
+.grille{
+    margin-top: 5%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    grid-gap:15px;
+}
+.element{
+    padding: 10px;
+    text-align: center;
 }
