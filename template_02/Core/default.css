@@ -1,6 +1,9 @@
 *{
     margin-left: 10px;
 }
+h1{
+    color: yellow;
+}
 img{
     border: 5px dotted red;
 }
