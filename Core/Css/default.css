@@ -45,15 +45,30 @@ nav ul li{
     align-items: center;
 }
 .grille{
-    margin-top: 5%;
+    margin-top: 1%;
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     align-items: center;
-    grid-gap:15px;
+    row-gap: 60px;
 }
 .element{
     padding: 10px;
     text-align: center;
+}
+.element p{
+    margin-bottom: 20px;
+    background-image: linear-gradient(90deg, rgba(87,42,117,1) 0%, rgba(164,106,49,1) 50%, rgba(207,46,33,1) 100%);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: background-size 500ms ease;
+}
+.element p:hover{
+    background-size: 14.5% 3px;
+}
+.element img{
+    border: 3px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
 }
