@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* Fonts */
 @font-face {
     font-family: "beauty mermaid";
     src: url("../../template_04/Assets/sources/polices/beauty_mermaid.ttf");
@@ -18,34 +19,50 @@
     src: url("../../template_04/Assets/sources/polices/beauty_mermaid.ttf");
     font-style: bold;
 }
+@font-face {
+    font-family: "pixel pinscher";
+    src: url("../../Assets/fonts/sh-pinscher/SHPinscher-Regular.otf");
+}
+@font-face {
+    font-family: "arcade pixel";
+    src: url("../../Assets/fonts/arcade-pixel/ARCADE.TTF");
+}
 a{
     text-decoration: none;
-    color: #f3f3f3;
+    color: #2a803c;
+    font-family: "pixel pinscher";
+    font-size: 22px;
+}
+.navigation a:hover{
+    animation: elementAppearAndReappear 0.6s ease 0s infinite normal forwards;
 }
 body{
     height: 100vh;
     width: 100%;
-    background-color: #474E68;
-    /* background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url(../../Assets/images/pixel_background.gif); */
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url(../../Assets/images/pixel_background.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    font-family: "pixel pinscher";
     color: #f3f3f3;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* #f3f3f3 */
     font-size: 18px;
 }
 .navigation{
     position: sticky;
     top:0;
     width: 100%;
-    height: 8%;
-    background-color:#404258;
-    border-bottom: 5px solid #404258;
-    border-right: 5px solid #404258;
-    border-left: 5px solid #404258;
+    height: 10%;
+    background-color: #010001;
+    border-bottom: 2px solid #1d1c1c;
+    
 }
 h1{
-    margin-top: 15px;
+    margin-top: 25px;
+    color: linear-gradient(rgba(0,0,0,0));
+    font-family: "arcade pixel"; 
+    font-size: 38px;
+    
 }
 nav{
     display: flex;
@@ -65,34 +82,66 @@ nav ul li{
     align-items: center;
 }
 .introduction{
-    height: calc(100vh - 56.31px);
+    height: calc(100vh - 70.5px);
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    font-family: "pixel pinscher";
+    font-size: 22px;
 }
+
 .introductionDebut{
     display: flex;
     align-items: center;
 }
 .introductionDebut strong{
-    font-size: 32px;
+    font-size: 42px;
+    font-family: "arcade pixel";
+    color: #2a803c;
 }
+@keyframes elementAppearAndReappear{
+    0%,100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+}
+#dot{
+    font-family: "arcade pixel";
+    color: #2a803c;
+    font-size: 36px;
+    position: relative;
+    bottom: 10px;
+    animation: elementAppearAndReappear 0.7s ease 0s infinite normal forwards;
+}
+
 .container{
     display: flex;
     flex-direction: column;
     height: 705px;
     align-items: center;
     justify-content: center;
-    background-color: #404258;
+    background-color: #474E68;
     color: #f3f3f3;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url(../../Assets/images/gameroom-background.gif);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 .container-item{
     margin-top: 30px;
 }
+.container-item p{
+    font-size: 22px;
+}
 h2{
-    font-size: 30px;
+    font-size: 42px;
     text-align: center;
     margin-bottom: 20px;
+    font-family: "arcade pixel";
+    color: #2a803c; 
 }
 .grille{
     display: grid;
@@ -107,14 +156,20 @@ h2{
     background: black;
     border-radius: 10px;
     color: white;
-    padding: 30px 25px;
+    padding: 30px 15px;
     transition: all .3s;
-    text-shadow: 0 0 15px black;
+    text-shadow: 0 0 20px black;
 }
 .element a{
     padding: 10px;
     font-size: 2em;
     float:right;
+}
+.element a:hover{
+    /*  TODO 
+        flèche appear & reappear 
+        arcade level like
+    */
 }
 .element:nth-of-type(1){
     background: center url("../../Assets/images/espace.jpeg");
@@ -140,13 +195,11 @@ h2{
 .element:nth-of-type(4){
     background: center url("../../Assets/images/chocolate_pie.jpeg");
     background-size: cover;
-    font-family: 'beauty mermaid';
 }
 .element:nth-of-type(4) a{
     color: #a61919;
-    text-shadow: -10px 1px 4px rgba(0,0,0,0.3);
     
 }
 .element:hover{
-    opacity: .7;
+    animation: elementAppearAndReappear 0.75s ease 0s infinite normal forwards;
 }
