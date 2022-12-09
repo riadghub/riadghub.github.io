@@ -45,7 +45,6 @@ body{
     background-repeat: no-repeat;
     font-family: "pixel pinscher";
     color: #f3f3f3;
-    /* #f3f3f3 */
     font-size: 18px;
 }
 .navigation{
@@ -150,15 +149,14 @@ h2{
     grid-gap: 15px;
     row-gap: 60px;
     margin: 40px;
+    
 }
-
 .element{
-    background: black;
-    border-radius: 10px;
+    /* background: black; */
     color: white;
     padding: 30px 15px;
-    transition: all .3s;
     text-shadow: 0 0 20px black;
+    box-shadow: 0px 0px 0px 2px #000000;
 }
 .element a{
     padding: 10px;
@@ -172,28 +170,28 @@ h2{
     */
 }
 .element:nth-of-type(1){
-    background: center url("../../Assets/images/espace.jpeg");
+    background: center url("../../Assets/images/space-pixel.png");
     background-size: cover;
 }
 .element:nth-of-type(1) a{
     color: #0e0e0d;
 }
 .element:nth-of-type(2){
-    background: center url("../../Assets/images/mars.jpeg");
+    background: center url("../../Assets/images/mars-pixel.png");
     background-size: cover;
 }
 .element:nth-of-type(2) a{
     color: #dcdf44;
 }
 .element:nth-of-type(3){
-    background: center url("../../Assets/images/elephant.jpeg");
+    background: center url("../../Assets/images/elephant-pixel.png");
     background-size: cover;
 }
 .element:nth-of-type(3) a{
     color: burlywood;
 }
 .element:nth-of-type(4){
-    background: center url("../../Assets/images/chocolate_pie.jpeg");
+    background: center url("../../Assets/images/chocolate-pie-pixel.png");
     background-size: cover;
 }
 .element:nth-of-type(4) a{
