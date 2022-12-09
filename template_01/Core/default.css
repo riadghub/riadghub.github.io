@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "space quest";
+}
+@font-face {
+    font-family: "space quest";
+    src: url(../Assets/fonts/space-quest-font/SpaceQuest-Xj4o.ttf);
+}
+@font-face {
+    font-family: "space quest italic";
+    src: url(../Assets/fonts/space-quest-font/SpaceQuestItalic-60Rx.ttf);
+    font-style: italic;
+}
+body{
+    height: 100vh;
+    background-image: url(../Assets/images/space-background.png);
+    background-position: bottom left;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 30px;
+}
+p{
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+}
+button{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px;
+    background-color: white;
+}
+.navigation{
+    top: 0;
+    position: sticky;
+}
+nav{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    
+}
+.flexbox{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flexbox-item{
+    margin: 10px;
+}
+.flexbox-item-1{
+    min-height: 300px;
+    text-align: left;
+    width: 30%;
+}
+.flexbox-item-1 h2{
+    font-size: 42px;
+}
+.flexbox-item-1 h3{
+    font-size: 26px;
+    margin-bottom: 16%;
+}
+.flexbox-item-1 p{
+    text-align: left;
+}
+.flexbox-item-2{
+    min-height: 400px;
+    width: 60%;
+}
+.flexbox-item-2 img{
+    border-radius: 20px;
+    border: 3px solid black;
+    box-shadow: 19px -27px 156px -35px rgba(0,0,0,0.56);
+}
+.flexbox-footer{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.flexbox-footer ul li{
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 20px;
+}
