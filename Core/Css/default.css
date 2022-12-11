@@ -107,6 +107,17 @@ nav ul li{
 		opacity: 0;
 	}
 }
+@keyframes wanderingAround {
+    0%,100% {
+        position: relative;
+        top: 10%;
+    }
+    50%{
+        position: relative;
+        top: 0;
+        bottom: 10%;
+    }
+}
 #dot{
     font-family: "arcade pixel";
     color: #2a803c;
@@ -172,6 +183,8 @@ h2{
 .element:nth-of-type(1){
     background: center url("../../Assets/images/space-pixel.png");
     background-size: cover;
+    animation: wanderingAround 2.7s ease 0s infinite normal forwards;
+}
 }
 .element:nth-of-type(1) a{
     color: #0e0e0d;
@@ -179,6 +192,8 @@ h2{
 .element:nth-of-type(2){
     background: center url("../../Assets/images/mars-pixel.png");
     background-size: cover;
+    animation: wanderingAround 3.4s ease 0s infinite normal forwards;
+}
 }
 .element:nth-of-type(2) a{
     color: #dcdf44;
@@ -186,6 +201,7 @@ h2{
 .element:nth-of-type(3){
     background: center url("../../Assets/images/elephant-pixel.png");
     background-size: cover;
+    animation: wanderingAround 4.3s ease 0s infinite normal forwards;
 }
 .element:nth-of-type(3) a{
     color: burlywood;
@@ -193,6 +209,7 @@ h2{
 .element:nth-of-type(4){
     background: center url("../../Assets/images/chocolate-pie-pixel.png");
     background-size: cover;
+    animation: wanderingAround 3.9s ease 0s infinite normal forwards;
 }
 .element:nth-of-type(4) a{
     color: #a61919;
@@ -201,3 +218,4 @@ h2{
 .element:hover{
     animation: elementAppearAndReappear 0.75s ease 0s infinite normal forwards;
 }
+
