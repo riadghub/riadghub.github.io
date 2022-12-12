@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'aquino';
+    src: url(../../Assets/fonts/aquino-font/AquinoDemo-511lj.ttf);
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #9dc6ff;
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    font-family: 'aquino';
+    font-size: 28px;
+    color: #222;
+}
+span{
+    color: #0c4271;
+}
+#clouds{
+    color: white;
+}
+.navigation{
+    position: sticky;
+    top:0;
+    background-color: #4993fa;
+}
+nav{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: url(../../Assets/images/waves.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+nav button{
+    vertical-align: top;
+    background-color: #9dc6ff;
+}
+footer ul li, nav ul li{
+    display: inline-block;
+    padding-right: 20px;
+}
+.grid-container{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr;
+    grid-template-rows: 200px;
+    border: 1px solid black;
+    flex-grow: 1;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 6vh;
+    background-image: url(../../Assets/images/waves.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
