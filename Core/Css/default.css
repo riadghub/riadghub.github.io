@@ -237,6 +237,22 @@ h2{
 #clouds{
     color: white;
 }
+.element:nth-of-type(6){
+    background: center url("../../Assets/images/brunch-pixel.png");
+    background-size: cover;
+    animation: wanderingAroundBackwards 2.6s ease 0s infinite normal forwards;
+}
+.brunch{
+    font-weight: bold;
+    color: black;
+}
+.book{
+    position: relative;
+    color: #DEBACE;
+    font-size: 22px;
+    font-weight: bold;
+    bottom: 15px;
+}
 .element:hover{
     animation: elementAppearAndReappear 0.75s ease 0s infinite normal forwards;
 }
