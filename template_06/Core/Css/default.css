@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+
+}
+body{
+    background-color: #DEBACE;
+}
+.navigation{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    -webkit-box-shadow:  0px 6px 15px 3px rgba(0,0,0,0.58); 
+    box-shadow:  0px 6px 15px 3px rgba(0,0,0,0.58);
+    z-index: 1;
+}
+.logo{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #7F669D;
+}
+nav ul{
+    margin-top: 20px;
+}
+p.logo{
+    margin-left: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+p.logo span{
+    color: #DEBACE;
+    font-size: 22px;
+    font-weight: bold;
+}
+.navigation ul{
+    list-style: none;
+}
+.navigation ul li{
+    margin-right: 20px;
+    font-size: 23px;
+    display: inline-block;
+}
+.navigation ul a{
+    color: black;
+}
+.navigation ul a:hover{
+    color: #DEBACE;
+    text-shadow: 0px 0px 8px rgba(0,0,0,1);
+}
+.btn-try{
+    position: relative;
+    bottom: 5px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 20px;
+    color: #7F669D;
+    border-radius: 50px;
+    padding: 15px 25px;
+    background-color: black;
+    margin-top: 15px;
+}
+.btn-try:hover{
+    color: black;
+    border: 1px solid black;
+    background-color: #7F669D;
+}
+.btn-try:active{
+    color: black;
+    border: 1px solid black;
+    background: #DEBACE;
+}
+#brunch{
+    margin-left: 70px;
+}
+#brunch img{
+    margin-top: 80px;  /* Vertical Space */
+    box-shadow: 1px 1px 16px 0px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 1px 1px 16px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 1px 16px 0px rgba(0,0,0,0.4);
+ }
+ #img_gauche{
+    margin-right: 10%;
+ }
+ #introduction{
+    margin-top: 200px;
+    text-align: center;
+ }
+ #introduction_main{
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 50px;
+ }
+ .btn-intro{
+    text-align: center;
+    border: 1px solid black;
+    font-size: 20px;
+    color: #DEBACE;
+    border-radius: 100px;
+    padding: 20px 120px;
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 80px;
+ }
+ .btn-intro:hover{
+    color: black;
+    border: 1px solid black;
+    background-color:#DEBACE;
+}
+#slider{
+    width: 700px;
+    overflow: hidden;
+    margin: 150px auto;
+    
+}
+#slides{
+    width: calc(700px * 3);
+    animation: glisse 20s infinite;
+    
+}
+.slide{
+    float: left;
+    
+}
+@keyframes glisse{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateX(-700px);
+    }
+    43%{
+        transform: translateX(-700px);
+    }
+    66%{
+        transform: translateX(-1400px);
+    }
+    76%{
+        transform: translateX(-1400px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+#le_menu{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+#booking{
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+#booking p{
+    margin-bottom: 50px;
+}
+#booking p u{
+    font-size: 40px;
+    font-weight: bold;
+}
+div{
+    margin-bottom: 10px;
+}
+#grille {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 150px 150px 150px;
+    grid-gap: 15px;
+}
+
+.element {
+  padding: 10px;
+  margin: 30px;
+  
+}
+.element p:nth-of-type(1){
+    font-size: 24px;
+    font-weight: bold;
+}
+.element p:nth-of-type(2){
+    font-size: 20px;
+
+}

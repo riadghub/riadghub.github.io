@@ -82,16 +82,16 @@ nav ul li{
 }
 .introduction{
     height: calc(100vh - 70.5px);
-    width: 100%;
     display: flex;
-    justify-content: space-evenly;
     font-family: "pixel pinscher";
     font-size: 22px;
 }
-
 .introductionDebut{
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .introductionDebut strong{
     font-size: 42px;
@@ -175,7 +175,6 @@ h2{
     
 }
 .element{
-    /* background: black; */
     color: white;
     padding: 30px 15px;
     text-shadow: 0 0 20px black;
@@ -242,3 +241,62 @@ h2{
     animation: elementAppearAndReappear 0.75s ease 0s infinite normal forwards;
 }
 
+/* Responsive */
+@media all and (max-width: 1200px) {
+    h1{
+        font-size: 30px;
+    }
+    .introduction, .introduction img{
+        font-size: 21px;
+    }
+    .container-item p{
+        font-size: 21px;
+    }
+    a{
+        font-size: 21px;
+    }
+    .introductionDebut strong{
+        font-size: 34px;
+    }
+    #dot{
+        font-size: 30px;
+    }
+    .element{
+        padding: 25px 12.5px;
+        text-shadow: 0 0 15px black;
+    }
+    .element a{
+        padding: 5px;
+        font-size: 1.75em;
+    }
+}
+@media all and (max-width: 800px) {
+    h1{
+        font-size: 24px;
+    }
+    .introduction{
+        font-size: 19px;
+    }
+    .introduction img{
+        display: none;
+    }
+    .container-item p{
+        font-size: 19px;
+    }
+    a{
+        font-size: 19px;
+    }
+    .introductionDebut strong{
+        font-size: 30px;
+    }
+    #dot{
+        font-size: 24px;
+    }
+    .element{
+        padding: 15px 5px;
+    }
+    .element a{
+        padding: 5px;
+        font-size: 1.5em;
+    }
+}

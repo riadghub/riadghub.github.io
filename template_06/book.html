@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Technical Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Personal Metadata -->
+    <meta name="description" content="A cooking template with different recipes">
+    <meta name="author" content="author"> 
+    <meta name="designer" content="designer"> 
+    <meta name="copyright" content="copyright"> 
+    <meta name="keywords" content="fraisier, tartes, cuisine"> 
+    <meta name="subject" content="subject"> 
+    <meta name="Classification" content="Content Classification"> 
+    <meta name="rating" content="general"> 
+    <meta name="distribution" content="Global">  
+
+    <!-- Title -->
+    <title>Brunchbook | Réservation</title>
+
+    <!-- Social Meta tags (Facebook & Twitter) -->
+    <!-- https://developers.google.com/search/docs/crawling-indexing/special-tags -->
+
+    <!-- Open Graph (Facebook) -->
+    <meta property="og:title" content="Title"> 
+    <meta property="og:type" content="Website type"> 
+    <meta property="og:url" content="https://www.url.com">
+    <meta property="og:image" content="https://www.url.com/logo.jpg">
+    <meta property="og:description" content="Description"> 
+
+    <!-- Twitter Card --> 
+    <meta name="twitter:card" content="summary_large_image"> 
+    <meta name="twitter:site" content="@0xsinbadtech">
+    <meta name="twitter:creator" content="@0xsinbadtech">
+    <meta name="twitter:title" content="name...."> 
+    <meta name="twitter:description" content="Official website of example, student ">
+    <meta name="twitter:image" content="https://loremipsum.io/assets/images/lorem-ipsum-generator-custom-placeholder-text.jpg"> 
+
+    <!-- Pinterest Claim -->
+    <meta name="p:domain_verify" content=" ">
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+    <!-- Favicons (png, ico, svg...)-->
+    <link rel="icon" href="Assets/images/favicon-16.png" sizes="16x16"> 
+    <link rel="icon" href="Assets/images/favicon-32.png" sizes="32x32"> 
+    <link rel="icon" href="Assets/images/favicon-96.png" sizes="96x96"> 
+    <link rel="icon" href="Assets/images/favicon-128.png" sizes="128x128"> 
+    <link rel="icon" href="Assets/images/favicon-228.png" sizes="228x228"> 
+    <link rel="shortcut icon" href="Assets/images/favicon-196.png" sizes="196x196">
+    <link rel="apple-touch-icon" href="Assets/images/favicon-180.png" sizes="180x180"> 
+    
+    <!-- CSS External Files-->
+    <link rel="stylesheet" href="Core/Css/default.css">
+</head>
+<body>   
+    <section class="navigation">
+        <nav>
+            <p class="logo">Brunch<span>book</span></p>
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="#">Notre Histoire</a>
+                </li>
+                <li>
+                    <a href="#">Presse</a>
+                </li>
+                <li>
+                    <a href="#">Lieux</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#"><img src="Assets/images/facebook_round.png" width="24px"></a>
+                    <a href="#"><img src="Assets/images/twitter.png" width="24px"></a>
+                    <a href="#"><img src="Assets/images/instagram.png" width="24px"></a>
+                </li>
+                <li>
+                    <a href="book.html"><button class="btn-try">Réserver</button></a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <div id="booking">
+        <p>
+            <u>Votre Réservation</u>
+        </p>
+        <form action="resultat.html" method="post">
+            <div>
+                <label for="prenom">Votre nom :</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Votre nom.." required>
+            </div>
+            <div>
+                <label for="dateDeReservation">Date de réservation :</label>
+                <input type="date" name="dateDeReservation" id="dateDeReservation" required>
+            </div>
+            <div>
+                <label for="lieuDeReservation">Où souhaitez-vous réserver ?</label>
+                <select name="lieuDeReservation" id="lieuDeReservation" required>
+                    <optgroup label="Lieu de réservation">
+                        <option value="Paris 1er">Paris 1er</option>
+                        <option value="Paris 2e">Paris 2e</option>
+                        <option value="Paris 4e">Paris 4e</option>
+                        <option value="Paris 16e">Paris 16e</option>
+                        <option value="Paris 20e">Paris 20e</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="nbDePersonnes">Pour combien de personnes souhaitez-vous réserver ?</label>
+                <select name="nbDePersonnes" id="nbDePersonnes" required>
+                    <optgroup label="Nombre de personnes :">
+                        <option value="Un">1</option>
+                        <option value="Deux">2</option>
+                        <option value="Trois">3</option>
+                        <option value="Quatre">4</option>
+                        <option value="Cinq">5</option>
+                        <option value="Six">6</option>
+                        <option value="Sept">7</option>
+                        <option value="Huit">8</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <input class = "btn-intro" type="submit" value="Envoyer">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
