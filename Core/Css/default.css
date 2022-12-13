@@ -46,7 +46,6 @@ body{
     font-family: "pixel pinscher";
     color: #f3f3f3;
     font-size: 18px;
-    /* cursor: none; */
 }
 .navigation{
     position: sticky;
@@ -316,4 +315,11 @@ h2{
         padding: 5px;
         font-size: 1.5em;
     }
+}
+.cursor{
+    position: absolute;
+    border: 2px solid black;
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
 }

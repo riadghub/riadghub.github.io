@@ -1,7 +1,8 @@
-const cursorStanding = document.querySelector(body);
-const cursorMoving = document.querySelector(body);
+// const cursor = document.querySelector('.cursor');
 
-const moveCursor = (e) => {
-    const mouseY = e.clientY;
-    const mouseX = e.clientX;
-}
+// document.addEventListener('mousemove', e => {
+//     cursor.setAttribute("style","top: "+e.pageY+"px ; left: "+e.pageX+"px;")
+// })
+
+
+
