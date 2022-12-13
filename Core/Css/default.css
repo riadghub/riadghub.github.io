@@ -150,7 +150,7 @@ nav ul li{
     color: #f3f3f3;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url(../../Assets/images/gameroom-background.gif);
     background-size: cover;
-    background-position: top;
+    background-position: left;
     background-repeat: no-repeat;
 }
 .container-item{
@@ -225,7 +225,7 @@ h2{
     color: #a61919;
 }
 .element:nth-of-type(5){
-        background: center url("../../Assets/images/animated-sea-waves.gif");
+        background: center url("../../Assets/images/animated-waves-compressed.gif");
         background-size: cover;
         animation: wanderingAround 3.1s ease 0s infinite normal forwards;
 }
