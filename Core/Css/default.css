@@ -46,6 +46,7 @@ body{
     font-family: "pixel pinscher";
     color: #f3f3f3;
     font-size: 18px;
+    /* cursor: none; */
 }
 .navigation{
     position: sticky;
@@ -224,7 +225,7 @@ h2{
     color: #a61919;
 }
 .element:nth-of-type(5){
-        background: center url("../../Assets/images/animated-waves-pixel.gif");
+        background: center url("../../Assets/images/animated-sea-waves.gif");
         background-size: cover;
         animation: wanderingAround 3.1s ease 0s infinite normal forwards;
 }
