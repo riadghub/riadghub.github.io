@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #5F8D4E;
+    color: #A4BE7B;
+    cursor: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.navigation{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+nav{
+    height: 8vh;
+    background-color: #285430;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+ul li{
+    display: inline-block;
+    padding-left: 1.5em;
+}
+.grille{
+    display: grid;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: 200px 500px;
+    grid-template-rows: 300px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.grille-left:nth-child(1){
+        
+}
+.grille-right{
+    text-align: center;
+}
+.cursor{
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnimation 0.5s infinite alternate;
+}
+.cursor::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    border: 8px solid darkred;
+    border-radius: 50%;
+    opacity: 0.5;
+    top: -9.5px;
+    left: -9.5px;
+    animation: cursorAnimation2 0.5 infinite alternate;
+}
+@keyframes cursorAnimation {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.7);
+    }
+}
+@keyframes cursorAnimation2 {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.4);
+    }
+}
+@keyframes cursorAnimation3 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+.expand{
+    animation: cursorAnimation3 0.4s backwards;
+    border: 2px solid red;
+}

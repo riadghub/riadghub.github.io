@@ -22,6 +22,7 @@ h1{
     font-family: 'aquino';
     font-size: 28px;
     color: #222;
+    margin-left: 10px;
 }
 span{
     color: #0c4271;
@@ -30,30 +31,56 @@ span{
     color: white;
 }
 .navigation{
+    display: flex;
     position: sticky;
     top:0;
     background-color: #4993fa;
-}
-nav{
     height: 12vh;
     width: 100%;
-    display: flex;
     align-items: center;
-    text-align: center;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
     background-image: url(../../Assets/images/waves.gif);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center top;
 }
-nav button{
+.start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center input{
+    height: 30px;
+    padding-left: 3px;
+}
+.search{
+    float: right;
+    height: 26px;
+    width: 26px;
+    border: none;
+    border-radius: 0;
+    background-image: url("../../Assets/images/search.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+.end button{
     vertical-align: top;
     background-color: #9dc6ff;
 }
-footer ul li, nav ul li{
+footer ul li, .end ul li{
     display: inline-block;
     padding-right: 20px;
 }
@@ -61,9 +88,15 @@ footer ul li, nav ul li{
     margin: 30px;
     display: grid;
     grid-template-columns: 1fr 2fr 0.5fr;
-    grid-template-rows: 200px;
+    grid-template-rows: auto;
     border: 1px solid black;
     flex-grow: 1;
+}
+.item-1 h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 footer{
     display: flex;

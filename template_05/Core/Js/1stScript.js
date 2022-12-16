@@ -1,15 +1,15 @@
-let chiffreUn = 7;
-let chiffreDeux = 5;
+// let chiffreUn = 7;
+// let chiffreDeux = 5;
 
-let prenom = "Riad";
+// let prenom = "Riad";
 
-let age = 22;
-let sommeUnEtDeux = 7+5;
+// let age = 22;
+// let sommeUnEtDeux = 7+5;
 
-const personne = [prenom, age];
+// const personne = [prenom, age];
 
-let username = prompt("Quel est votre nom ?");
+// let username = prompt("Quel est votre nom ?");
 
-alert("Bienvenue "+username+" !");
+// alert("Bienvenue "+username+" !");
 
-console.log(personne);
+// console.log(personne);
