@@ -73,50 +73,94 @@
         <section class="end">
             <ul>
                 <li>
-                    <a href="#">
-                        A
+                    <a href="index.html">
+                        Accueil
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        B
+                        A propos
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        C
+                        Nous contacter
                     </a>
                 </li>
             </ul>
-            <button type="button">
-                MyButton
-            </button>
         </section>
     </section>
     <section class="grid-container">
         <section class="grid-item item-1">
             <h2>
-                Prêts à vous envoler
-                <br>
+                <p class="fly">
+                    Prêts à vous envoler
+                </p>
                 ou 
                 <br>
-                à prendre le large ?
+                <p class="sink">
+                    à rejoindre les abysses ?
+                </p>
             </h2>
         </section>
         <section class="grid-item item-2">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt animi
-                libero placeat hic explicabo natus non provident veritatis ullam, doloribus 
-                aliquid mollitia quaerat deserunt vero? Fugiat nam voluptas autem incidunt?
+                Montez à bord de l'un de nos hydravions <br>et laissez-vous porter par le vent.
             </p>
+            <a href="#">
+                <button type="button">
+                    S'envoler
+                </button>
+            </a>
         </section>
         <section class="grid-item item-3">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt animi
-                libero placeat hic explicabo natus non provident veritatis ullam, doloribus 
-                aliquid mollitia quaerat deserunt vero? Fugiat nam voluptas autem incidunt?
+                Nagez auprès des poissons,<br>
+                découvrez des fonds marins<br>
+                et évadez-vous.
             </p>
+            <a href="#">
+                <button type="button">
+                    Plonger
+                </button>
+            </a>
         </section>
+        <section class="grid-item item-4">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="Assets/images/scuba-diving-slide1.jpeg" style="width:700px; height: 400px">
+                <div class="slides-caption">Vous y découvrirez une multitude<br> de poissons tropicaux différents.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="Assets/images/seaplane-slide1.jpeg" style="width:700px; height: 400px">
+                <div class="slides-caption">Envolez-vous afin d'admirer<br> des paysages à couper le souffle.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="Assets/images/scuba-diving-slide2.jpeg" style="width:700px; height: 400px">
+                <div class="slides-caption">Ne faites qu'un avec la mer<br> et ses habitants.</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="Assets/images/seaplane-slide2.jpeg" style="width:700px; height: 400px">
+                <div class="slides-caption">Vivez dès maintenant une expérience inouabliable.</div>
+            </div>
+
+            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            <div class="dotfamily">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </section>
+        
     </section>
     <footer>
         <ul>
