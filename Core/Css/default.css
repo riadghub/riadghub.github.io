@@ -199,45 +199,45 @@ h2{
 .element:nth-of-type(1) a{
     color: #0e0e0d;
 }
-.element:nth-of-type(2){
+/* .element:nth-of-type(2){
     background: center url("../../Assets/images/mars-pixel.png");
     background-size: cover;
     animation: wanderingAroundBackwards 3.7s ease 0s infinite normal forwards;
 }
 .element:nth-of-type(2) a{
     color: #dcdf44;
-}
-.element:nth-of-type(3){
+} */
+/* .element:nth-of-type(3){
     background: center url("../../Assets/images/elephant-pixel.png");
     background-size: cover;
     animation: wanderingAroundBackwards 3.3s ease 0s infinite normal forwards;
 }
 .element:nth-of-type(3) a{
     color: burlywood;
-}
-.element:nth-of-type(4){
+} */
+.element:nth-of-type(2){
     background: center url("../../Assets/images/chocolate-pie-pixel.png");
     background-size: cover;
     animation: wanderingAround 3.9s ease 0s infinite normal forwards;
 }
-.element:nth-of-type(4) a{
+.element:nth-of-type(2) a{
     color: #a61919;
 }
-.element:nth-of-type(5){
+.element:nth-of-type(3){
         background: center url("../../Assets/images/animated-sea-waves-min.gif");
         background-size: cover;
         animation: wanderingAround 3.1s ease 0s infinite normal forwards;
 }
-.element:nth-of-type(5) a{
+.element:nth-of-type(3) a{
     color: black;
 }
-.element:nth-of-type(5) a span{
+.element:nth-of-type(3) a span{
     color: #0c4271;
 }
 #clouds{
     color: white;
 }
-.element:nth-of-type(6){
+.element:nth-of-type(4){
     background: center url("../../Assets/images/brunch-pixel.png");
     background-size: cover;
     animation: wanderingAroundBackwards 2.6s ease 0s infinite normal forwards;
