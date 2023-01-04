@@ -54,6 +54,7 @@ body{
     height: 10%;
     background-color: #010001;
     border-bottom: 2px solid #1d1c1c;
+    z-index: 1;
     
 }
 h1{
