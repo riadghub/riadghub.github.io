@@ -191,7 +191,7 @@ h2{
         arcade level like
     */
 }
-/* .element:nth-of-type(1){
+.element:nth-of-type(1){
     background: center url("../../Assets/images/space-pixel.png");
     background-size: cover;
     animation: wanderingAround 2.7s ease 0s infinite normal forwards;
@@ -224,7 +224,7 @@ h2{
     color: #a61919;
 }
 .element:nth-of-type(5){
-        background: center url("../../Assets/images/animated-waves-compressed.gif");
+        background: center url("../../Assets/images/animated-sea-waves-min.gif");
         background-size: cover;
         animation: wanderingAround 3.1s ease 0s infinite normal forwards;
 }
@@ -255,71 +255,8 @@ h2{
 }
 .element:hover{
     animation: elementAppearAndReappear 0.75s ease 0s infinite normal forwards;
-} */
-#image figure{
-	width: 170px;
-	height: 240px;
-	position: relative;
-	display: inline-block;
-	margin-right: 50px;
 }
-#image figure:last-child{
-	margin-right: 00px;
-}
-#image figure p{
-	opacity: 0;
-	font-size: 20px;
-	font-weight: bold;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 130px;
-	height: 200px;
-	line-height: 200px;
-}
-#image figure a{
-	color: #000;
-	text-decoration: none;
-}
-figure figcaption{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	padding: 15px;
-	font-size: 25px;
-	background-color: #000;
-	color: #fff;
-	opacity: .8;
-	text-align: left;
-}
-#bd #big{
-	width: 670px;
-	float:left;
-	position: relative;
-	border: 10px solid #000;
-}
-#bd #big img{
-	width: 650px;
-	height: 500px;
-}
-#bd aside{
-	width: 190px;
-	float: right;
-}
-#bd aside a{
-	display:block;
-	float:left;
-	width: 84px;
-	height: 84px;
-	border: 2px solid #000;
-	margin-bottom: 20px;
-}
-#bd aside a:first-child{
-	border-color: red;
-}
-#bd aside a:nth-child(2n+1){
-	margin-right: 20px;
-}
+
 /* Responsive */
 @media all and (max-width: 1200px) {
     h1{
