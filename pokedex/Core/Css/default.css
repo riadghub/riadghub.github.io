@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#squelette{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    margin: 20px;
+    column-gap: 20px;
+}
+#squelette-gauche{
+    border: 4px solid black;
+    background-color: red;
+}
+#squelette-droite{
+    border: 4px solid black;
+    background-color: red;
+}
+#top-lights{
+    display: flex;
+}
+.left-svg{
+    position: absolute;
+    z-index: 5;
+}
+#top-lights ul li{
+    margin-top: 20px;
+    display: inline-block;
+    padding-right: 10px;
+}
+#blue-light{
+    margin-top: 20px;
+}
+#main-screen{
+    text-align: center;
+    
+}
