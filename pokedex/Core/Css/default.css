@@ -5,6 +5,14 @@
 div{
     display: block;
 }
+#searchbar{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+#submit{
+    /* width: 18px; */
+}
 #squelette{
     display: grid;
     justify-content: center;
@@ -40,7 +48,7 @@ div{
 }
 #screen{
     display: grid;
-    height: 40vh;
+    height: 38vh;
     margin: 50px;
     border: 3px solid black;
     border-radius: 0 0 0 50px;
@@ -54,7 +62,7 @@ div{
     margin-left: 10%;
     margin-right: 10%;
     background-color: #98cb98;
-    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png);
+    background-image: url("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
