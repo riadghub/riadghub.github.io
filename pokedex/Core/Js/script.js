@@ -7,6 +7,7 @@ let myText = document.querySelector('input');
 let myButton = document.querySelector('button');
 let myName = document.querySelector('#name-screen');
 let myImage = document.querySelector('#main-screen');
+let index;
 
 fetch('https://pokebuildapi.fr/api/v1/pokemon')
   .then((response) => {
@@ -15,13 +16,19 @@ fetch('https://pokebuildapi.fr/api/v1/pokemon')
 .then((data) => {
   let myPokemons = data;
   myButton.addEventListener('click',function () {
+    let myTextC = myText.value;
+    myTextC = myTextC.charAt(0).toUpperCase();
+    for(let j = 1; j < myText.value.length;j++){
+      myTextC += myText.value.charAt(j).toLowerCase();
+    }
     for(let i = 0; i < myPokemons.length; i++){
-      if(myText.value === myPokemons[i].name){
+      if(myTextC === myPokemons[i].name){
+        index = i;
         myName.innerHTML = myPokemons[i].name;
         myImage.style.backgroundImage = "url("+myPokemons[i].image+")";
         myInformations.innerHTML = 'PV: '+myPokemons[i].stats.HP+'<br>Attaque: '+myPokemons[i].stats.attack+'<br>Défense: '+myPokemons[i].stats.defense+'<br>Attaque spéciale: '+myPokemons[i].stats.special_attack+'<br>Défense Spéciale: '+myPokemons[i].stats.special_defense+'<br>Vitesse: '+myPokemons[i].stats.speed;
         if(myPokemons[i].apiTypes.length == 1){
-          myType.innerHTML = ''+myPokemons[i].apiTypes[0].name
+          myType.innerHTML = ''+myPokemons[i].apiTypes[0].name;
         }else{
           myType.innerHTML = ''+myPokemons[i].apiTypes[0].name+'<br>'+myPokemons[i].apiTypes[1].name;
         }
@@ -41,6 +48,17 @@ fetch('https://pokebuildapi.fr/api/v1/pokemon')
     }
   });
   myButtonPlus.addEventListener('click',function(){
+    myName.innerHTML = myPokemons[index+1].name;
+    myImage.style.backgroundImage = "url("+myPokemons[index+1].image+")";
+    myInformations.innerHTML = 'PV: '+myPokemons[index+1].stats.HP+'<br>Attaque: '+myPokemons[index+1].stats.attack+'<br>Défense: '+myPokemons[index+1].stats.defense+'<br>Attaque spéciale: '+myPokemons[index+1].stats.special_attack+'<br>Défense Spéciale: '+myPokemons[index+1].stats.special_defense+'<br>Vitesse: '+myPokemons[index+1].stats.speed;
+    if(myPokemons[index+1].apiTypes.length == 1){
+      myType.innerHTML = ''+myPokemons[index+1].apiTypes[0].name;
+    }else{
+      myType.innerHTML = ''+myPokemons[index+1].apiTypes[0].name+'<br>'+myPokemons[index+1].apiTypes[1].name;
+    }
+    myID.innerHTML = '#'+myPokemons[index+1].pokedexId;
+  });
+  myButtonMinus.addEventListener('click',function(){
     alert('hello');
   });
 });
