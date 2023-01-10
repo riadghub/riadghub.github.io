@@ -5,8 +5,9 @@ fetch('https://pokebuildapi.fr/api/v1/pokemon')
 .then((data) => {
   let myPokemons = data;
   myButton.addEventListener('click',function () {
+    console.log(myText.value);
     for(let i = 0; i < myPokemons.length; i++){
-      if(myText == myPokemons[i].name){
+      if(myText.value === myPokemons[i].name){
         myName.innerHTML = myPokemons[i].name;
         myImage.style.backgroundImage = "url("+myPokemons[i].image+")";
       }
