@@ -243,6 +243,14 @@ h2{
     background-size: cover;
     animation: wanderingAroundBackwards 2.6s ease 0s infinite normal forwards;
 }
+.element:nth-of-type(5){
+    background: center url("../../Assets/images/pokedex-pixel.png");
+    background-size: cover;
+    animation: wanderingAroundBackwards 3.4s ease 0s infinite normal forwards;
+}
+.element:nth-of-type(5) a{
+    color: yellow;
+}
 .brunch{
     font-weight: bold;
     color: black;
