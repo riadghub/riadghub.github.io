@@ -50,7 +50,7 @@ fetch('https://pokebuildapi.fr/api/v1/pokemon')
   });
   myButtonPlus.addEventListener('click',function(){
     for(let i = 0; i < myPokemons.length; i++){
-      if(index === 897 || index === 898){
+      if(index === 897){
         index = -1;
       }
       myName.innerHTML = myPokemons[index+1].name;
