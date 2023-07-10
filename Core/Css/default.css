@@ -225,25 +225,11 @@ h2{
     color: #a61919;
 }
 .element:nth-of-type(3){
-        background: center url("../../Assets/images/animated-sea-waves-min.gif");
-        background-size: cover;
-        animation: wanderingAround 3.1s ease 0s infinite normal forwards;
-}
-.element:nth-of-type(3) a{
-    color: black;
-}
-.element:nth-of-type(3) a span{
-    color: #0c4271;
-}
-#clouds{
-    color: white;
-}
-.element:nth-of-type(4){
     background: center url("../../Assets/images/brunch-pixel.png");
     background-size: cover;
     animation: wanderingAroundBackwards 2.6s ease 0s infinite normal forwards;
 }
-.element:nth-of-type(5){
+.element:nth-of-type(4){
     background: center url("../../Assets/images/pokedex-pixel.png");
     background-size: cover;
     animation: wanderingAroundBackwards 3.4s ease 0s infinite normal forwards;
