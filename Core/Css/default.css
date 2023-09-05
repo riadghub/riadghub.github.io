@@ -220,12 +220,12 @@ h2{
     animation: wanderingAroundBackwards 3.4s ease 0s infinite normal forwards;
 }
 .element:nth-of-type(5){
-    background: center url("../../Assets/images/nutrimuscle-pixel.png");
+    background: center url("../../Assets/images/bigburgers-pixel.png");
     background-size: cover;
     animation: wanderingAroundBackwards 2.2s ease 0s infinite normal forwards;
 }
 .element:nth-of-type(5) a{
-    color: darkblue;
+    color: yellow;
 }
 .element:nth-of-type(6){
     background: center url("../../Assets/images/mypokedex-pixel.png");
